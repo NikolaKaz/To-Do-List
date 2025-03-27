@@ -31,4 +31,51 @@ section {
   margin: auto;
   border: 1px solid #000;
   border-radius: 10px;
+}
+
+.button {
+  width: 15%;
+  min-width: 48px;
+  min-height: 48px;
+  color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover,
+button:focus {
+  filter: brightness(120%);
+  box-shadow: 4px 2px 5px #000;
+}
+
+.new-item-entry {
+  position: sticky;
+  top: 0;
+  margin-bottom: 1rem;
+  padding: 0.75;
+}
+.new-item-entry form {
+  display: flex;
+  justify-content: space-between;
+}
+.new-item-entry form label {
+  position: absolute;
+  left: -10000px;
+}
+.new-item-entry form input[type=text] {
+  width: 80%;
+  font-size: 1.25rem;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  padding: 0.75rem;
+  outline: none;
+}
+.new-item-entry form input[type=text]:focus,
+.new-item-entry form input[type=text]:hover {
+  box-shadow: 4px 2px 5px #000;
 }/*# sourceMappingURL=styles.css.map */
