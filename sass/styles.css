@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -78,4 +78,59 @@ button:focus {
 .new-item-entry form input[type=text]:focus,
 .new-item-entry form input[type=text]:hover {
   box-shadow: 4px 2px 5px #000;
+}
+.new-item-entry form button {
+  font-size: 1.25rem;
+  background-color: #4caf50;
+  padding: 0.75rem;
+}
+@media only screen and (min-width: 768px) {
+  .new-item-entry form button {
+    font-size: 1.5rem;
+  }
+}
+
+.list-container {
+  min-height: 60vh;
+  padding: 0.75rem;
+}
+.list-container .list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.list-container .list-title button {
+  font-size: 1rem;
+  background-color: #9f6060;
+  padding: 0 0.1rem;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 768) {
+  .list-container .list-title button {
+    padding: 0 0.5rem;
+  }
+}
+.list-container .list-title hr {
+  width: 100%;
+}
+.list-container .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+}
+.list-container .item input[type=checkbox] {
+  text-align: center;
+  width: 2.5rem;
+  min-width: 48px;
+  height: 2.5rem;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+.list-container .item input[type=checkbox]:focus + label {
+  text-decoration: underline;
+}
+.list-container .item label {
+  font-size: 1.1rem;
 }/*# sourceMappingURL=styles.css.map */
